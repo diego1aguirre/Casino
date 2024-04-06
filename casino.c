@@ -34,7 +34,7 @@ int round1(){
 
     // User input for betting amount
     int bet1; 
-    printf("%s, Enter money to bet : $", name);
+    printf("%s, Enter money to bet: $", name);
     scanf("%d", &bet1);
     printf("\n\n");
 
@@ -44,8 +44,6 @@ int round1(){
         printf("Enter Again: $");
         scanf("%d", &bet1);
     }
-
-    printf("\n\n");
     
     // Computer generates a random number between 0 and 9
     int computer1;
@@ -56,16 +54,16 @@ int round1(){
     printf("Guess a number between 1 and 10: ");
     scanf("%d", &guess1);
 
-    printf("\n\n");
+    printf("\n");
 
     // Check if guess exceeds the allowed range
     if (guess1>10){
         printf("Number Exceeds 10\n");
         printf("Enter Again: ");
         scanf("%d", &guess1);
+        printf("\n");
     }
 
-    printf("\n\n");
 
     // Check if user's guess matches computer's number
     if (guess1 == computer1){
