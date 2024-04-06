@@ -1,12 +1,14 @@
 #include<stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 // Function prototypes
 int rules();
-int round1();
+void round1();
 
 int main(){
     // Display game rules
+    srand(time(NULL));
     rules();
     printf("\n\n");
     
@@ -16,7 +18,7 @@ int main(){
 }
 
 // Function definition for round1
-int round1(){
+void round1(){
     // User input for name
     char name[50];
     printf("Enter your name: ");
